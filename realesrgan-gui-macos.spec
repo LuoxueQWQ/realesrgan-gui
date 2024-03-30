@@ -6,7 +6,7 @@ import subprocess
 
 # 获取提交哈希和构造版本号
 commit_hash = subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD']).decode('utf-8').strip()
-version = "0.2.5." + commit_hash
+version = "0.3." + commit_hash
 
 # PyInstaller分析脚本
 # 指定主入口文件
