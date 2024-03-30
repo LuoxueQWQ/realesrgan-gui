@@ -85,9 +85,10 @@ jobs:
       - name: Create release assets
         id: vars
         run: |
-          # https://github.com/xinntao/Real-ESRGAN/releases
-          REAL_ESRGAN_VERSION=v0.2.5.0
-          REAL_ESRGAN_RELEASE_TIME=20220424
+          #OFF# https://github.com/xinntao/Real-ESRGAN/releases
+          # https://github.com/LuoxueQWQ/Real-ESRGAN
+          REAL_ESRGAN_VERSION=v3.0
+          REAL_ESRGAN_RELEASE_TIME=20240330
           REAL_ESRGAN_PLATFORM=
 
           BUILD_TIME=$(date +%Y%m%d-%H%I%S)
@@ -112,7 +113,7 @@ jobs:
             wget \
               -nv \
               -O realesrgan-ncnn-vulkan.zip \
-              "https://github.com/xinntao/Real-ESRGAN/releases/download/${REAL_ESRGAN_VERSION}/realesrgan-ncnn-vulkan-${REAL_ESRGAN_RELEASE_TIME}-${REAL_ESRGAN_PLATFORM}.zip"
+              "https://github.com/LuoxueQWQ/Real-ESRGAN/releases/download/${REAL_ESRGAN_VERSION}/realesrgan-ncnn-vulkan-${REAL_ESRGAN_RELEASE_TIME}-${REAL_ESRGAN_PLATFORM}.zip"
             unzip -o realesrgan-ncnn-vulkan.zip
             rm -f realesrgan-ncnn-vulkan.zip input.jpg input2.jpg onepiece_demo.mp4
             if [ $BUILD_OS == "macOS" ]; then
