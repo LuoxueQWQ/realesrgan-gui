@@ -1,6 +1,6 @@
 # Clone repo
 echo "INFO: Clone repo."
-git clone https://github.com/TransparentLC/realesrgan-gui.git
+git clone https://github.com/LuoxueQWQ//realesrgan-gui.git
 cd realesrgan-gui
 
 # Create and activate Python virtual environment
@@ -33,8 +33,8 @@ fi
 
 # Download required files
 echo "INFO: 🚀 Downloading realesrgan-ncnn-vulkan executable and models..."
-base_url="https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0"
-source_file="realesrgan-ncnn-vulkan-20220424-macos.zip"
+base_url="https://github.com/LuoxueQWQ/Real-ESRGAN/releases/download/v3.0"
+source_file="realesrgan-ncnn-vulkan-20240330-macos.zip"
 target_file="realesrgan-ncnn-vulkan"
 model_folder="models"
 
